@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP MOD 3 WEBPRO M. Muhammad Keinan Rasyid 1303223158</title>
+    <style>
+
+        .container {
+            /* elemen berada di satu baris yang sama */
+            display: flex; 
+            /* menempatkan sebuah item  berada di tengah */
+            align-items: center;
+            /* memberikan jarak */
+            padding: 20px;
+        }
+
+        .foto, .video {
+            text-align: center;
+        }
+
+       .foto img {
+            /* untuk membuat border dari sebuah foto dengan ketebalan 5px berwarna hitam */
+            border: 5px solid rgb(27, 100, 29);
+       }
+
+       table, td, th, tr {
+            border: 1px solid rgb(49, 123, 34);
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Membuat Heading -->
+    <h1>PROFIL SAYA</h1>
+
+    <!-- Membungkus Sebuah Elemen -->
+    <div class="container">
+        <!-- Sebagai frame Dari Foto dan Tulisan -->
+        <div class="foto">
+            <!--Mengimport Sebuah Foto Kedalam File HTML -->
+            <img src="PERSONAL.jpg" alt="foto-profil" style="width: 35%;">
+            <!--Berfungsi Sebagai Subjudul -->
+            <h3>Foto Profil</h3>
+        </div>
+        <!-- Wadah Dari Video dan Tulisan -->
+        <div class="video">
+            <!--Mengimport Sebuah Foto Kedalam File HTML -->
+            <video width="400" controls>
+                <source src="videoplayback.mp4" type="video/mp4">
+            </video>
+            <!--Berfungsi Sebagai Subjudul-->
+            <h3>Video Perkenalan</h3>
+        </div>
+    </div>
+
+    <!-- Berfungsi Sebagai Subjudul -->
+    <h2>Tentang Saya</h2>
+    <!-- Membuat Sebuah Paragraf -->
+    <p>HALO!! Saya seorang pengembang web dengan passion di bidang teknologi informasi dan desain kreatif</p>
+    
+    <!-- Berfungsi Sebagai Subjudul -->
+    <h2>Keterampilan</h2>
+    <!-- Untuk Membuat Sebuah Tabel -->
+    <table>
+        <!-- Untuk Membuat Tabel Row -->
+        <tr>
+            <!-- Untuk Membuat Table Header -->
+            <th>Keterampilan</th>
+            <th>Tingkat</th>
+        </tr>
+        <tr>
+            <!-- Untuk Membuat Table Data -->
+            <td>HTML</td>
+            <td>Menengah</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>menengah</td>
+        </tr>
+        <tr>
+            <td>Javascript</td>
+            <td>kurang</td>
+        </tr>
+    </table>
+    
+    <!-- Untuk Membuat Sebuah Form -->
+    <form>
+        <!-- Berfungsi Untuk Subheading -->
+        <h2>Hubungi Saya</h2>
+        <!-- Untuk Membuat Form Yang Dapat Diisi -->
+        <label for="nama"> Nama: </label>
+        <!-- Untuk Membuat Kolom Untuk Diisi -->
+        <input type="text"> <br>
+        <label for="Email"> Email: </label>
+        <input type="text"> <br>
+        <label for="Pesan"> Pesan: </label><br>
+        <!-- membuka Kolom Yang Dapat Diisi Dengan Text Yang Lebih Banyak -->
+        <textarea name="Pesan"></textarea><br>
+        <!-- Untuk Membuat Sebuah Button -->
+        <button>
+            <input type="submit" value="Kirim Pesan">
+        </button>
+    </form>
+
+    <h2>Media Sosial</h2>
+    <!-- menaruh Sebuah Link Yang Dapat Diklik dan meruh logo biar langsung di klik-->
+    <a href="https://www.instagram.com/keinan_rasyid/"> <img src="instagram(1).jpeg" alt="instagram" width="80px"></a>
+
+</body>
+</html> 
